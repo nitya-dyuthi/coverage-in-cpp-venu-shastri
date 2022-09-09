@@ -4,6 +4,7 @@
 #include "typewise-alert.h"
 #include "string"
 
+using namespace std;
 
 int myadd(string);
 
