@@ -2,21 +2,20 @@
 
 #include "test/catch.hpp"
 #include "typewise-alert.h"
-#include "stdlib.h"
 #include "string"
 
 
-int add(string);
+int myadd(string);
 
 TEST_CASE("given empty string and zero is expected") {
-  REQUIRE(add("") == 0);
+  REQUIRE(myadd("") == 0);
 }
 
 
 //IMPLEMENTATION
 
 
-int add(string str) {
+int myadd(string str) {
   if(strlen(str) == 0)
     return 0;
   return 1;
