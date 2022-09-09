@@ -3,6 +3,8 @@
 #include "test/catch.hpp"
 #include "typewise-alert.h"
 #include "stdlib.h"
+#include "string.h"
+
 
 int add(string);
 
