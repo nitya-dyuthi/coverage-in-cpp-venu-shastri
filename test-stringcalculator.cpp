@@ -4,6 +4,8 @@
 #include "typewise-alert.h"
 #include "stdlib.h"
 
+int add(string);
+
 TEST_CASE("given empty string and zero is expected") {
   REQUIRE(add("") == 0);
 }
@@ -11,7 +13,6 @@ TEST_CASE("given empty string and zero is expected") {
 
 //IMPLEMENTATION
 
-int add(string);
 
 int add(string str) {
   if(strlen(str) == 0)
