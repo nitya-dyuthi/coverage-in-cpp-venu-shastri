@@ -88,7 +88,6 @@ void sendToEmail(BreachType breachType) {
       break;
     case NORMAL:
       break;
-      */
+      } */
  printEmail(breachType, recepient);
-  }
 }
