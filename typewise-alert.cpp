@@ -63,7 +63,8 @@ void sendToController(BreachType breachType) {
   const unsigned short header = 0xfeed;
   printf("%x : %x\n", header, breachType);
 }
-void printEmail(BreachType breachType) { 
+
+void printEmail(BreachType breachType, const char *recepient) { 
  if(breachType == TOO_LOW) {
       printf("To: %s\n", recepient);
       printf("Hi, the temperature is too low\n");
@@ -88,6 +89,6 @@ void sendToEmail(BreachType breachType) {
     case NORMAL:
       break;
       */
- printEmail(breachType);
+ printEmail(breachType, recepient);
   }
 }
