@@ -14,6 +14,7 @@ typedef enum {
 
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
+int initUpperLimit(CoolingType coolingType);
 
 typedef enum {
   TO_CONTROLLER,
