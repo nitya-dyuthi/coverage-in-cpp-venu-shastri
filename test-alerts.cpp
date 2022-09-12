@@ -12,7 +12,7 @@ TEST_CASE("infers the breach according to limits upper limit") {
 }
 
 TEST_CASE("infers the breach according to limits normal") {
-  REQUIRE(inferBreach(25, 20, 30) == TOO_HIGH);
+  REQUIRE(inferBreach(25, 20, 30) == NORMAL);
 }
 
 TEST_CASE("check init upper limit for passive cooling") {
